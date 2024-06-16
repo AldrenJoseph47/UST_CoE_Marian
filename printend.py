@@ -1,0 +1,6 @@
+print('print 1 to 4 with spaces in between ')
+print('1',end='  ')
+print('2',end='  ')
+print('')
+print('3',end='  ')
+print('4',end='  ')

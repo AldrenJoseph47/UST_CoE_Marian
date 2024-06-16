@@ -1,0 +1,41 @@
+import tkinter as tk
+from tkinter import ttk
+
+# Generates a label and place that in grid location using <grid()> function
+l2_number1_label = ttk.Label(root, text="Number1")
+l2_number1_label.grid(column=0, row=1, sticky=tk.W, padx=20, pady=5)
+
+# Generates a text box and place that in grid location using <grid()> function
+# Text box will be disabled at the initial stage.
+l2_number1_entry = ttk.Entry(root, state='disabled')
+l2_number1_entry.grid(column=1, row=1, sticky=tk.W, padx=5, pady=5)
+
+l2_number2_label = ttk.Label(root, text="Number2")
+l2_number2_label.grid(column=0, row=2, sticky=tk.W, padx=20, pady=5)
+
+l2_number2_entry = ttk.Entry(root, state='disabled')
+l2_number2_entry.grid(column=1, row=2, sticky=tk.W, padx=5, pady=5)
+
+# ====================================
+# Widgets of Largest among three numbers.
+# Three labels, three text box entries.
+# ====================================
+l3_number1_label = ttk.Label(root, text="Number1")
+l3_number1_label.grid(column=2, row=1, sticky=tk.W, padx=5, pady=5)
+
+l3_number1_entry = ttk.Entry(root, state='disabled')
+l3_number1_entry.grid(column=3, row=1, padx=5, pady=5)
+
+l3_number2_label = ttk.Label(root, text="Number2")
+l3_number2_label.grid(column=2, row=2, sticky=tk.W, padx=5, pady=5)
+
+l3_number2_entry = ttk.Entry(root, state='disabled')
+l3_number2_entry.grid(column=3, row=2, padx=5, pady=5)
+
+l3_number3_label = ttk.Label(root, text="Number3")
+l3_number3_label.grid(column=2, row=3, sticky=tk.W, padx=5, pady=5)
+
+l3_number3_entry = ttk.Entry(root, state='disabled')
+l3_number3_entry.grid(column=3, row=3, padx=5, pady=5)
+
+root.mainloop()
